@@ -25,6 +25,7 @@ Swift iOS project template that handles authentication with email/password, Sign
 - Open your project configuration: click the project name in the left tree view. Select your app from the TARGETS section, then select the Info tab, and expand the URL Types section.
 - Click the + button, and add a URL scheme for your reversed client ID. To find this value, open the GoogleService-Info.plist configuration file, and look for the REVERSED_CLIENT_ID key. Copy the value of that key, and paste it into the URL Schemes box on the configuration page. Leave the other fields blank.
 - Documentation reference: [Get started with Google Sign-In for iOS](https://developers.google.com/identity/sign-in/ios/start-integrating#configure_app_project)
+
 ![Google Config](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/GoogleConfig.png)
 
 ## Sign in with Apple
