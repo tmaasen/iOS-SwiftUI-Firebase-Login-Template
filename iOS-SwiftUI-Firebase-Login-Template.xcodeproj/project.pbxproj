@@ -13,7 +13,6 @@
 		1410E3CD299781C7005E4FBF /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3CC299781C7005E4FBF /* AuthenticationViewModel.swift */; };
 		1410E3D1299781E0005E4FBF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3D0299781E0005E4FBF /* Login.swift */; };
 		1410E3D3299781F3005E4FBF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3D2299781F3005E4FBF /* Home.swift */; };
-		1410E3DB2997853D005E4FBF /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 1410E3DA2997853D005E4FBF /* FirebaseAppCheck */; };
 		1410E3DD2997853D005E4FBF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1410E3DC2997853D005E4FBF /* FirebaseAuth */; };
 		1410E3E22997873B005E4FBF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1410E3E12997873B005E4FBF /* GoogleSignIn */; };
 		1410E3E529978887005E4FBF /* LoginOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3E429978886005E4FBF /* LoginOptions.swift */; };
@@ -62,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1410E3DB2997853D005E4FBF /* FirebaseAppCheck in Frameworks */,
 				1410E3DD2997853D005E4FBF /* FirebaseAuth in Frameworks */,
 				1410E3E22997873B005E4FBF /* GoogleSignIn in Frameworks */,
 			);
@@ -188,7 +186,6 @@
 			);
 			name = "iOS-SwiftUI-Firebase-Login-Template";
 			packageProductDependencies = (
-				1410E3DA2997853D005E4FBF /* FirebaseAppCheck */,
 				1410E3DC2997853D005E4FBF /* FirebaseAuth */,
 				1410E3E12997873B005E4FBF /* GoogleSignIn */,
 			);
@@ -395,7 +392,7 @@
 				DEVELOPMENT_TEAM = 3HPMUUXP27;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-SwiftUI-Firebase-Login-Template/Info.plist";
+				INFOPLIST_FILE = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -435,7 +432,7 @@
 				DEVELOPMENT_TEAM = 3HPMUUXP27;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-SwiftUI-Firebase-Login-Template/Info.plist";
+				INFOPLIST_FILE = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -506,11 +503,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1410E3DA2997853D005E4FBF /* FirebaseAppCheck */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1410E3D92997853D005E4FBF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAppCheck;
-		};
 		1410E3DC2997853D005E4FBF /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1410E3D92997853D005E4FBF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
