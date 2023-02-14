@@ -8,8 +8,8 @@ Swift iOS project template that handles authentication with email/password, Sign
 
 # Setup
 1. Clone this repo, or copy the entirety of this project folder to your repo https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/tree/main/iOS-SwiftUI-Firebase-Login-Template.
-2. Change the Bundle ID of the project to your own Bundle ID so you don't have a duplicate.
-3. The following dependencies should already be in added to your project via Swift Package Manager (SPM). If you want to use CocoaPods, add the below dependencies to your PodFile.
+2. If you cloned the repo, add your own Bundle ID in the project configuration.
+3. If you cloned the repo, the following dependencies should already be in added to your project via Swift Package Manager (SPM). If you want to use CocoaPods, add the below dependencies to your PodFile.
 
 ![Dependencies](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/Setup_Dependencies.png)
 
@@ -33,9 +33,10 @@ Swift iOS project template that handles authentication with email/password, Sign
 
 ![AppleDevSetup](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/AppleDeveloperSetup.png)
 
-2. Add Sign in with Apple to your project's capabilities. NOTE: I also added the Keychain Sharing capability because it got rid of some console warnings for me, but functionality for Apple Keychain is not included in this boilerplate.
+2. Add Sign in with Apple to your project's capabilities. NOTE: I added the Keychain Sharing capability because it gets rid of some console warnings and fixes a bug when signing in with Email/Password, but functionality for Apple Keychain is not included in this template.
 
 ![Capabilities](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/Setup_Capabilities.png)
+![Keychain](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/Keychain.png)
 
 ## References
 Special thanks goes out to Joseph Hinkle and his repo https://github.com/joehinkle11/Login-with-Apple-Firebase-SwiftUI which was my main reference for this project.
