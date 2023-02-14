@@ -7,12 +7,12 @@
 Swift iOS project template that handles authentication with email/password, Sign in with Google, and Sign in with Apple. It contains iOS 16 SwiftUI features such as the new Navigation system, and the code is architected in a way that is scalable if you want to build onto this boilerplate.
 
 # Setup
-1. Copy the entirety of this project folder to your repo 
+1. Copy the entirety of this project folder to your repo https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/tree/main/iOS-SwiftUI-Firebase-Login-Template.
 2. Add the following packages to your project either via Swift Package Manager (SPM) or CocoaPods. This example uses SPM.
 
 ![Dependencies](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/Setup_Dependencies.png)
 
-3. Create a new project in Firebase [Firebase Setup for iOS](https://firebase.google.com/docs/ios/setup?authuser=0). You will need the auto-generated GoogleService-Info.plist file to compile this project. Make sure to follow Firebase's setup intructions thoroughly.
+3. Create a new project in [Firebase Setup for iOS](https://firebase.google.com/docs/ios/setup?authuser=0). You will need the auto-generated GoogleService-Info.plist file to compile this project. Make sure to follow Firebase's setup intructions thoroughly.
 4. Add Sign in with Google and Sign in with Apple as valid Sign-In Methods on your Firebase project once setup (under the Authentication section > Sign-In Methods tab)
 
 ![Sign-In Methods](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/Setup_SignInMethods.png)
