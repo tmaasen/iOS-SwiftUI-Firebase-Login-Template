@@ -8,19 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var authViewModel: AuthenticationViewModel
+    var hasPersistedSignedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            if authViewModel.state == .signedOut && !hasPersistedSignedIn && !authViewModel.restoreGoogleSignIn {
+                Login()
+            } else {
+                Home()
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(AuthenticationViewModel())
     }
 }
