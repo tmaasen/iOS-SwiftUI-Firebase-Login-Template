@@ -1,5 +1,3 @@
-zlib License
-
 Copyright (C) 2023 Tanner Maasen
 
 This software is provided 'as-is', without any express or implied
