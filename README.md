@@ -4,7 +4,7 @@
 
 # Firebase Authentication Boilerplate for iOS
 
-Swift iOS project template that handles authentication with email/password, Sign in with Google, and Sign in with Apple. It contains iOS 16 SwiftUI features such as the new Navigation system, and the code is architected in a way that is scalable if you want to build onto this boilerplate.
+Swift iOS project template that handles authentication with email/password, Sign in with Google, and Sign in with Apple. It contains iOS 16 SwiftUI features such as the new Navigation system, and the code is architected in a way that is scalable if you want to build onto this boilerplate. This template also includes a basic form of persisted sign-in.
 
 # Setup
 1. Clone this repo, or copy the entirety of this project folder to your repo https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/tree/main/iOS-SwiftUI-Firebase-Login-Template.
