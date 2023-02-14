@@ -15,7 +15,6 @@
 		1410E3D3299781F3005E4FBF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3D2299781F3005E4FBF /* Home.swift */; };
 		1410E3DB2997853D005E4FBF /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 1410E3DA2997853D005E4FBF /* FirebaseAppCheck */; };
 		1410E3DD2997853D005E4FBF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1410E3DC2997853D005E4FBF /* FirebaseAuth */; };
-		1410E3DF299785D1005E4FBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1410E3DE299785D1005E4FBF /* GoogleService-Info.plist */; };
 		1410E3E22997873B005E4FBF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1410E3E12997873B005E4FBF /* GoogleSignIn */; };
 		1410E3E529978887005E4FBF /* LoginOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3E429978886005E4FBF /* LoginOptions.swift */; };
 		1410E3E8299788D6005E4FBF /* CustomSignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3E7299788D5005E4FBF /* CustomSignInWithAppleButton.swift */; };
@@ -42,13 +41,11 @@
 		1410E3CC299781C7005E4FBF /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		1410E3D0299781E0005E4FBF /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		1410E3D2299781F3005E4FBF /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		1410E3DE299785D1005E4FBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1410E3E429978886005E4FBF /* LoginOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOptions.swift; sourceTree = "<group>"; };
 		1410E3E7299788D5005E4FBF /* CustomSignInWithAppleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignInWithAppleButton.swift; sourceTree = "<group>"; };
 		1410E3EA299788F7005E4FBF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1410E3F029978F97005E4FBF /* SocialLogins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLogins.swift; sourceTree = "<group>"; };
 		1410E3F229978F9B005E4FBF /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
-		1426B8D62997FF7D0091E0B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		142FD6832997F94F00F42E77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14F252E2299AD71B00DAC3B8 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		14F252E4299BEECD00DAC3B8 /* firebase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firebase.png; sourceTree = "<group>"; };
@@ -107,8 +104,6 @@
 				1410E3E9299788EB005E4FBF /* Utils */,
 				1410E3B82997811B005E4FBF /* iOS_SwiftUI_Firebase_Login_TemplateApp.swift */,
 				1410E3BA2997811B005E4FBF /* ContentView.swift */,
-				1410E3DE299785D1005E4FBF /* GoogleService-Info.plist */,
-				1426B8D62997FF7D0091E0B4 /* Info.plist */,
 				142FD6832997F94F00F42E77 /* Assets.xcassets */,
 				1410E3BE2997811D005E4FBF /* iOS_SwiftUI_Firebase_Login_Template.entitlements */,
 				1410E3BF2997811D005E4FBF /* Preview Content */,
@@ -252,7 +247,6 @@
 				14F252E9299BF13500DAC3B8 /* Setup_Dependencies.png in Resources */,
 				14F252E7299BF0A000DAC3B8 /* Setup_SignInMethods.png in Resources */,
 				142FD6842997F94F00F42E77 /* Assets.xcassets in Resources */,
-				1410E3DF299785D1005E4FBF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
