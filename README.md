@@ -13,14 +13,14 @@ Swift iOS project template that handles authentication with email/password, Sign
 
 ![Dependencies](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/Setup_Dependencies.png)
 
-4. Create a new project in Firebase, and then add a new Apple App [Firebase Setup for iOS](https://firebase.google.com/docs/ios/setup?authuser=0). You will need the auto-generated GoogleService-Info.plist file to run this project. [Link to create new Firebase project](https://console.firebase.google.com/)
-5. Add Email / Password, Sign in with Google, and Sign in with Apple Sign-In Methods on your Firebase project once setup (under Authentication > Sign-In Methods tab)
+4. Create a new project in Firebase, and then add a new Apple App (for further instruction see [Firebase Setup for iOS](https://firebase.google.com/docs/ios/setup?authuser=0)). You will need the auto-generated GoogleService-Info.plist file to run this project.
+5. Add Email/Password, Sign in with Google, and Sign in with Apple Sign-In Methods on your Firebase project once setup (under Authentication > Sign-In Methods tab)
 
 ![Sign-In Methods](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/Setup_SignInMethods.png)
 
 ## Sign in with Google
-1. Add GIDClientID under Targets > Info > Custom macOS Application Target Properties in XCode
-- Hover over the list of existing properties, right click, Add New Row. Let the key = "GIDClientID", tab over to the value cell, and paste in the CLIENT_ID from your GoogleService-Info.plist configuration file.
+1. Add a new GIDClientID property under Targets > Info > Custom macOS Application Target Properties in XCode
+- Hover over the list of existing properties, right click, Add Row. Let the key = "GIDClientID", tab over to the value cell, and paste in the CLIENT_ID from your GoogleService-Info.plist configuration file.
 2. Add custom URL scheme to your Xcode project:
 - Open your project configuration: click the project name in the left tree view. Select your app from the TARGETS section, then select the Info tab, and expand the URL Types section.
 - Click the + button, and add a URL scheme for your reversed client ID. To find this value, open the GoogleService-Info.plist configuration file, and look for the REVERSED_CLIENT_ID key. Copy the value of that key, and paste it into the URL Schemes box on the configuration page. Leave the other fields blank.
@@ -33,7 +33,8 @@ Swift iOS project template that handles authentication with email/password, Sign
 
 ![AppleDevSetup](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/AppleDeveloperSetup.png)
 
-2. Add Sign in with Apple to your project's capabilities. NOTE: I added the Keychain Sharing capability because it gets rid of some console warnings and fixes a bug when signing in with Email/Password, but functionality for Apple Keychain is not included in this template.
+2. Ensure that Sign in with Apple is already added to your project's capabilities. If not, you will need to add it. 
+- NOTE: I added the Keychain Sharing capability because it gets rid of some console warnings and fixes a bug when signing in with Email/Password, but functionality for using the Apple Keychain is not included in this template.
 
 ![Capabilities](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/Setup_Capabilities.png)
 ![Keychain](https://github.com/tmaasen/iOS-SwiftUI-Firebase-Login-Template/blob/main/Keychain.png)
