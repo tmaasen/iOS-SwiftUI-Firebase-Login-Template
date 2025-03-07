@@ -40,11 +40,49 @@ struct Login: View {
                     .withSecureFieldStyles()
                     .submitLabel(.next)
                     .focused($passwordIsFocused)
-                if (!showAuthLoader) {
-                    // Sign In
-                    LoginButton(emailAddress: $emailAddress, password: $password, showAuthLoader: $showAuthLoader, showInvalidPWAlert: $showInvalidPWAlert, isAuthenticated: $isAuthenticated, buttonText: "Sign In")
-                    // Create Account
-                    LoginButton(emailAddress: $emailAddress, password: $password, showAuthLoader: $showAuthLoader, showInvalidPWAlert: $showInvalidPWAlert, isAuthenticated: $isAuthenticated, buttonText: "Create Account")
+                
+				if (!showAuthLoader) {
+					Button(action: {
+						showAuthLoader = true
+						Task {
+							await authViewModel.login(with: .emailAndPassword(email: emailAddress, password: password))
+							
+							if authViewModel.state != .signedIn {
+								showInvalidPWAlert = true
+							} else {
+								isAuthenticated = true
+							}
+							showAuthLoader = false
+						}
+					}) {
+						Text("Sign In")
+							.withButtonStyles()
+							.disabled(emailAddress.isEmpty || password.isEmpty)
+							.alert(isPresented: $showInvalidPWAlert) {
+								Alert(title: Text("Email or Password Incorrect"))
+							}
+					}
+					
+					Button(action: {
+						showAuthLoader = true
+						Task {
+							await authViewModel.signUp(email: emailAddress, password: password)
+							
+							if authViewModel.state != .signedIn {
+								showInvalidPWAlert = true
+							} else {
+								isAuthenticated = true
+							}
+							showAuthLoader = false
+						}
+					}) {
+						Text("Sign Up")
+							.withButtonStyles()
+							.disabled(emailAddress.isEmpty || password.isEmpty)
+							.alert(isPresented: $showInvalidPWAlert) {
+								Alert(title: Text("Email or Password Incorrect"))
+							}
+					}
                 } else {
                     ProgressView()
                 }

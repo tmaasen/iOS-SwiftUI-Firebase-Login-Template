@@ -14,22 +14,14 @@
 		1410E3D1299781E0005E4FBF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3D0299781E0005E4FBF /* Login.swift */; };
 		1410E3D3299781F3005E4FBF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3D2299781F3005E4FBF /* Home.swift */; };
 		1410E3E529978887005E4FBF /* LoginOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3E429978886005E4FBF /* LoginOptions.swift */; };
-		1410E3E8299788D6005E4FBF /* CustomSignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3E7299788D5005E4FBF /* CustomSignInWithAppleButton.swift */; };
 		1410E3EB299788F7005E4FBF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3EA299788F7005E4FBF /* Extensions.swift */; };
 		1410E3F129978F97005E4FBF /* SocialLogins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3F029978F97005E4FBF /* SocialLogins.swift */; };
-		1410E3F329978F9B005E4FBF /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1410E3F229978F9B005E4FBF /* GoogleSignInButton.swift */; };
 		142FD6842997F94F00F42E77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142FD6832997F94F00F42E77 /* Assets.xcassets */; };
 		147A32642D7B361F00DD45A5 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 147A32632D7B361F00DD45A5 /* FirebaseAppCheck */; };
 		147A32662D7B361F00DD45A5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 147A32652D7B361F00DD45A5 /* FirebaseAuth */; };
 		147A32682D7B361F00DD45A5 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 147A32672D7B361F00DD45A5 /* FirebaseCore */; };
 		147A326B2D7B364F00DD45A5 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 147A326A2D7B364F00DD45A5 /* GoogleSignIn */; };
 		147A326D2D7B364F00DD45A5 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 147A326C2D7B364F00DD45A5 /* GoogleSignInSwift */; };
-		14F252E3299AD71B00DAC3B8 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F252E2299AD71B00DAC3B8 /* LoginButton.swift */; };
-		14F252E5299BEECD00DAC3B8 /* firebase.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F252E4299BEECD00DAC3B8 /* firebase.png */; };
-		14F252E7299BF0A000DAC3B8 /* Setup_SignInMethods.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F252E6299BF0A000DAC3B8 /* Setup_SignInMethods.png */; };
-		14F252E9299BF13500DAC3B8 /* Setup_Dependencies.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F252E8299BF13500DAC3B8 /* Setup_Dependencies.png */; };
-		14F252EB299BF21700DAC3B8 /* Setup_Capabilities.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F252EA299BF21700DAC3B8 /* Setup_Capabilities.png */; };
-		14F252ED299C0E4F00DAC3B8 /* AppleDeveloperSetup.png in Resources */ = {isa = PBXBuildFile; fileRef = 14F252EC299C0E4F00DAC3B8 /* AppleDeveloperSetup.png */; };
 		14F252F1299C133600DAC3B8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 14F252F0299C133600DAC3B8 /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -43,17 +35,10 @@
 		1410E3D0299781E0005E4FBF /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		1410E3D2299781F3005E4FBF /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		1410E3E429978886005E4FBF /* LoginOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOptions.swift; sourceTree = "<group>"; };
-		1410E3E7299788D5005E4FBF /* CustomSignInWithAppleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSignInWithAppleButton.swift; sourceTree = "<group>"; };
 		1410E3EA299788F7005E4FBF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1410E3F029978F97005E4FBF /* SocialLogins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLogins.swift; sourceTree = "<group>"; };
-		1410E3F229978F9B005E4FBF /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		142FD6832997F94F00F42E77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		14F252E2299AD71B00DAC3B8 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
-		14F252E4299BEECD00DAC3B8 /* firebase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firebase.png; sourceTree = "<group>"; };
-		14F252E6299BF0A000DAC3B8 /* Setup_SignInMethods.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Setup_SignInMethods.png; sourceTree = "<group>"; };
-		14F252E8299BF13500DAC3B8 /* Setup_Dependencies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Setup_Dependencies.png; sourceTree = "<group>"; };
-		14F252EA299BF21700DAC3B8 /* Setup_Capabilities.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Setup_Capabilities.png; sourceTree = "<group>"; };
-		14F252EC299C0E4F00DAC3B8 /* AppleDeveloperSetup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppleDeveloperSetup.png; sourceTree = "<group>"; };
+		147A326E2D7B3E2400DD45A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		14F252F0299C133600DAC3B8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,11 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				14F252F0299C133600DAC3B8 /* .gitignore */,
-				14F252E4299BEECD00DAC3B8 /* firebase.png */,
-				14F252E6299BF0A000DAC3B8 /* Setup_SignInMethods.png */,
-				14F252E8299BF13500DAC3B8 /* Setup_Dependencies.png */,
-				14F252EA299BF21700DAC3B8 /* Setup_Capabilities.png */,
-				14F252EC299C0E4F00DAC3B8 /* AppleDeveloperSetup.png */,
 				1410E3B72997811B005E4FBF /* iOS-SwiftUI-Firebase-Login-Template */,
 				1410E3B62997811B005E4FBF /* Products */,
 			);
@@ -98,6 +78,7 @@
 		1410E3B72997811B005E4FBF /* iOS-SwiftUI-Firebase-Login-Template */ = {
 			isa = PBXGroup;
 			children = (
+				147A326E2D7B3E2400DD45A5 /* Info.plist */,
 				1410E3E32997887D005E4FBF /* Enums */,
 				1410E3C929978171005E4FBF /* ViewModels */,
 				1410E3D42997833E005E4FBF /* Components */,
@@ -123,7 +104,6 @@
 		1410E3C729978161005E4FBF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1410E3E6299788C8005E4FBF /* UIKit Views */,
 				1410E3D2299781F3005E4FBF /* Home.swift */,
 				1410E3D0299781E0005E4FBF /* Login.swift */,
 			);
@@ -142,8 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				1410E3F029978F97005E4FBF /* SocialLogins.swift */,
-				1410E3F229978F9B005E4FBF /* GoogleSignInButton.swift */,
-				14F252E2299AD71B00DAC3B8 /* LoginButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -154,14 +132,6 @@
 				1410E3E429978886005E4FBF /* LoginOptions.swift */,
 			);
 			path = Enums;
-			sourceTree = "<group>";
-		};
-		1410E3E6299788C8005E4FBF /* UIKit Views */ = {
-			isa = PBXGroup;
-			children = (
-				1410E3E7299788D5005E4FBF /* CustomSignInWithAppleButton.swift */,
-			);
-			path = "UIKit Views";
 			sourceTree = "<group>";
 		};
 		1410E3E9299788EB005E4FBF /* Utils */ = {
@@ -242,12 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F252F1299C133600DAC3B8 /* .gitignore in Resources */,
-				14F252EB299BF21700DAC3B8 /* Setup_Capabilities.png in Resources */,
-				14F252E5299BEECD00DAC3B8 /* firebase.png in Resources */,
 				1410E3C12997811D005E4FBF /* Preview Assets.xcassets in Resources */,
-				14F252ED299C0E4F00DAC3B8 /* AppleDeveloperSetup.png in Resources */,
-				14F252E9299BF13500DAC3B8 /* Setup_Dependencies.png in Resources */,
-				14F252E7299BF0A000DAC3B8 /* Setup_SignInMethods.png in Resources */,
 				142FD6842997F94F00F42E77 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,15 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F252E3299AD71B00DAC3B8 /* LoginButton.swift in Sources */,
 				1410E3F129978F97005E4FBF /* SocialLogins.swift in Sources */,
 				1410E3CD299781C7005E4FBF /* AuthenticationViewModel.swift in Sources */,
 				1410E3EB299788F7005E4FBF /* Extensions.swift in Sources */,
 				1410E3BB2997811B005E4FBF /* ContentView.swift in Sources */,
 				1410E3B92997811B005E4FBF /* iOS_SwiftUI_Firebase_Login_TemplateApp.swift in Sources */,
-				1410E3E8299788D6005E4FBF /* CustomSignInWithAppleButton.swift in Sources */,
 				1410E3D1299781E0005E4FBF /* Login.swift in Sources */,
-				1410E3F329978F9B005E4FBF /* GoogleSignInButton.swift in Sources */,
 				1410E3E529978887005E4FBF /* LoginOptions.swift in Sources */,
 				1410E3D3299781F3005E4FBF /* Home.swift in Sources */,
 			);
@@ -397,7 +359,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "iOS-SwiftUI-Firebase-Login-Template/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -408,7 +370,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
@@ -437,7 +399,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "";
+				INFOPLIST_FILE = "iOS-SwiftUI-Firebase-Login-Template/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -448,7 +410,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;

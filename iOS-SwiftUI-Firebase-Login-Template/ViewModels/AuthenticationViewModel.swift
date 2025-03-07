@@ -3,7 +3,7 @@
 //
 //
 
-import Firebase
+import FirebaseAuth
 import GoogleSignIn
 import AuthenticationServices
 
