@@ -17,21 +17,25 @@ struct Login: View {
 	@EnvironmentObject var authViewModel: AuthenticationViewModel
 	
 	var body: some View {
-		VStack {
-			// Logo and Title
-			Image("FirebaseIcon")
-				.resizable()
-				.scaledToFit()
-				.frame(width: 80, height: 80)
+		VStack(spacing: 0) {
+			Spacer()
 			
-			Text("Login with Firebase Example")
-				.foregroundColor(.Orange)
-				.padding(.top, 15)
-				.font(.system(size: 30))
-				.multilineTextAlignment(.center)
+			// Logo and Title
+			VStack(spacing: 5) {
+				Image("FirebaseIcon")
+					.resizable()
+					.scaledToFit()
+					.frame(width: 80, height: 80)
+				
+				Text("Login with Firebase Example")
+					.foregroundColor(.Orange)
+					.font(.system(size: 28))
+					.multilineTextAlignment(.center)
+			}
+			.padding(.bottom, 40)
 			
 			// Form Fields
-			VStack {
+			VStack(spacing: 0) {
 				TextField("Email Address", text: $email)
 					.withLoginStyles()
 					.textContentType(.emailAddress)
@@ -54,13 +58,15 @@ struct Login: View {
 				// Forgot Password Link
 				HStack {
 					Spacer()
-					Button("Forgot Password?") {
+					Button {
 						showResetPasswordAlert = true
+					} label: {
+						Text("Forgot Password?")
+							.foregroundColor(.Orange)
+							.font(.footnote)
 					}
-					.font(.footnote)
-					.foregroundColor(.Orange)
-					.padding(.bottom, 12)
 				}
+				.padding(.bottom, 20)
 				
 				// Error Display
 				if let error = authViewModel.error {
@@ -78,25 +84,51 @@ struct Login: View {
 							.tint(.white)
 					} else {
 						Text("Sign In")
-							.withButtonStyles()
+							.foregroundColor(.white)
+							.font(.headline)
+							.frame(maxWidth: .infinity)
+							.padding()
+							.background(Color.Orange)
+							.cornerRadius(10)
 					}
 				}
 				.disabled(email.isEmpty || password.isEmpty || authViewModel.isLoading)
+				.padding(.bottom, 15)
 				
 				// Sign Up Button
 				Button(action: signUp) {
 					Text("Sign Up")
-						.withButtonStyles()
+						.foregroundColor(.white)
+						.font(.headline)
+						.frame(maxWidth: .infinity)
+						.padding()
+						.background(Color.Orange)
+						.cornerRadius(10)
 				}
 				.disabled(email.isEmpty || password.isEmpty || authViewModel.isLoading)
 			}
-			.padding()
+			.padding(.horizontal)
 			
+			// OR Divider
+			HStack {
+				VStack { Divider() }
+				Text("OR")
+					.font(.footnote)
+					.foregroundColor(.secondary)
+					.padding(.horizontal, 8)
+				VStack { Divider() }
+			}
+			.padding(.vertical, 30)
+			.padding(.horizontal)
+			
+			// Social Login Options - Centered in remaining space
 			Spacer()
 			
-			// Social Login Options
 			SocialLogins()
+			
+			Spacer()
 		}
+		.padding(.horizontal)
 		.alert("Reset Password", isPresented: $showResetPasswordAlert) {
 			TextField("Enter your email", text: $resetPasswordEmail)
 				.autocapitalization(.none)
@@ -150,6 +182,8 @@ struct Login: View {
 struct Login_Previews: PreviewProvider {
 	static var previews: some View {
 		Login()
-			.environmentObject(AuthenticationViewModel())
+			.environmentObject(AuthenticationViewModel(
+				authRepository: FirebaseAuthRepository()
+			))
 	}
 }
