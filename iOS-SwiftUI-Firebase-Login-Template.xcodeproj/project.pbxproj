@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,9 @@
 		147A32682D7B361F00DD45A5 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 147A32672D7B361F00DD45A5 /* FirebaseCore */; };
 		147A326B2D7B364F00DD45A5 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 147A326A2D7B364F00DD45A5 /* GoogleSignIn */; };
 		147A326D2D7B364F00DD45A5 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 147A326C2D7B364F00DD45A5 /* GoogleSignInSwift */; };
+		147A32742D7BE85C00DD45A5 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147A32732D7BE85C00DD45A5 /* AuthError.swift */; };
+		147A32762D7BE9A200DD45A5 /* SignInState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147A32752D7BE9A200DD45A5 /* SignInState.swift */; };
+		147A32782D7BEB7600DD45A5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147A32772D7BEB7600DD45A5 /* LoadingView.swift */; };
 		14F252F1299C133600DAC3B8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 14F252F0299C133600DAC3B8 /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +42,15 @@
 		1410E3F029978F97005E4FBF /* SocialLogins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLogins.swift; sourceTree = "<group>"; };
 		142FD6832997F94F00F42E77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		147A326E2D7B3E2400DD45A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		147A32732D7BE85C00DD45A5 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
+		147A32752D7BE9A200DD45A5 /* SignInState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInState.swift; sourceTree = "<group>"; };
+		147A32772D7BEB7600DD45A5 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		14F252F0299C133600DAC3B8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		147A326F2D7BE81900DD45A5 /* Repositories */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Repositories; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1410E3B22997811B005E4FBF /* Frameworks */ = {
@@ -78,17 +88,17 @@
 		1410E3B72997811B005E4FBF /* iOS-SwiftUI-Firebase-Login-Template */ = {
 			isa = PBXGroup;
 			children = (
-				147A326E2D7B3E2400DD45A5 /* Info.plist */,
-				1410E3E32997887D005E4FBF /* Enums */,
-				1410E3C929978171005E4FBF /* ViewModels */,
-				1410E3D42997833E005E4FBF /* Components */,
-				1410E3C729978161005E4FBF /* Views */,
-				1410E3E9299788EB005E4FBF /* Utils */,
-				1410E3B82997811B005E4FBF /* iOS_SwiftUI_Firebase_Login_TemplateApp.swift */,
-				1410E3BA2997811B005E4FBF /* ContentView.swift */,
-				142FD6832997F94F00F42E77 /* Assets.xcassets */,
 				1410E3BE2997811D005E4FBF /* iOS_SwiftUI_Firebase_Login_Template.entitlements */,
+				147A326E2D7B3E2400DD45A5 /* Info.plist */,
+				1410E3BA2997811B005E4FBF /* ContentView.swift */,
+				1410E3B82997811B005E4FBF /* iOS_SwiftUI_Firebase_Login_TemplateApp.swift */,
+				142FD6832997F94F00F42E77 /* Assets.xcassets */,
+				1410E3E32997887D005E4FBF /* Enums */,
 				1410E3BF2997811D005E4FBF /* Preview Content */,
+				147A326F2D7BE81900DD45A5 /* Repositories */,
+				1410E3E9299788EB005E4FBF /* Utils */,
+				1410E3C929978171005E4FBF /* ViewModels */,
+				1410E3C729978161005E4FBF /* Views */,
 			);
 			path = "iOS-SwiftUI-Firebase-Login-Template";
 			sourceTree = "<group>";
@@ -106,6 +116,7 @@
 			children = (
 				1410E3D2299781F3005E4FBF /* Home.swift */,
 				1410E3D0299781E0005E4FBF /* Login.swift */,
+				1410E3D42997833E005E4FBF /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +132,7 @@
 		1410E3D42997833E005E4FBF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				147A32772D7BEB7600DD45A5 /* LoadingView.swift */,
 				1410E3F029978F97005E4FBF /* SocialLogins.swift */,
 			);
 			path = Components;
@@ -129,6 +141,8 @@
 		1410E3E32997887D005E4FBF /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				147A32752D7BE9A200DD45A5 /* SignInState.swift */,
+				147A32732D7BE85C00DD45A5 /* AuthError.swift */,
 				1410E3E429978886005E4FBF /* LoginOptions.swift */,
 			);
 			path = Enums;
@@ -156,6 +170,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				147A326F2D7BE81900DD45A5 /* Repositories */,
 			);
 			name = "iOS-SwiftUI-Firebase-Login-Template";
 			packageProductDependencies = (
@@ -225,9 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1410E3F129978F97005E4FBF /* SocialLogins.swift in Sources */,
+				147A32762D7BE9A200DD45A5 /* SignInState.swift in Sources */,
 				1410E3CD299781C7005E4FBF /* AuthenticationViewModel.swift in Sources */,
 				1410E3EB299788F7005E4FBF /* Extensions.swift in Sources */,
 				1410E3BB2997811B005E4FBF /* ContentView.swift in Sources */,
+				147A32782D7BEB7600DD45A5 /* LoadingView.swift in Sources */,
+				147A32742D7BE85C00DD45A5 /* AuthError.swift in Sources */,
 				1410E3B92997811B005E4FBF /* iOS_SwiftUI_Firebase_Login_TemplateApp.swift in Sources */,
 				1410E3D1299781E0005E4FBF /* Login.swift in Sources */,
 				1410E3E529978887005E4FBF /* LoginOptions.swift in Sources */,
@@ -353,7 +373,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS-SwiftUI-Firebase-Login-Template/iOS_SwiftUI_Firebase_Login_Template.entitlements";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS-SwiftUI-Firebase-Login-Template/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -375,6 +396,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TannerMaasen.iosAuthExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
@@ -393,7 +415,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS-SwiftUI-Firebase-Login-Template/iOS_SwiftUI_Firebase_Login_Template.entitlements";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOS-SwiftUI-Firebase-Login-Template/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
@@ -415,6 +438,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TannerMaasen.iosAuthExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
