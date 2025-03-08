@@ -2,7 +2,7 @@
   <img src="/assets/Logo.png" width="50%"/>
 </p>
 
-# iOS SwiftUI Firebase Login Template
+# iOS SwiftUI Firebase Auth Template
 
 A modern, well-architected template for implementing Firebase Authentication in SwiftUI apps. This template includes support for Email/Password, Google, and Apple Sign-In authentication methods.
 
