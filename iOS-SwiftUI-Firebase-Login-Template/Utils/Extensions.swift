@@ -36,17 +36,6 @@ public extension SecureField {
     }
 }
 
-public extension Text {
-    func withButtonStyles() -> some View {
-        self.foregroundColor(.white)
-            .padding()
-            .frame(width: 320, height: 60)
-            .background(Color.Orange)
-            .cornerRadius(15.0)
-            .font(.headline)
-    }
-}
-
 // Needed for Sign in With Apple
 extension String {
     var sha256: String {
