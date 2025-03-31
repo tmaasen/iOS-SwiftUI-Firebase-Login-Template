@@ -150,9 +150,6 @@ struct Login: View {
 		} message: {
 			Text("Check your email for a link to reset your password.")
 		}
-		.onTapGesture {
-			hideKeyboard()
-		}
 	}
 	
 	// Helper methods
